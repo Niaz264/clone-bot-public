@@ -109,14 +109,14 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton(
-        "Repo", "https://www.github.com/yashoswalyo/clone-bot-public"
-    )
-    buttons.buildbutton("Report Group", "https://t.me/yash_codes_support")
+        "Owner", "https://t.me/sito404"
+    
+    buttons.buildbutton("Cat", "https://google.com")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f"""
 This bot can mirror all your links to Google Drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+
 """
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
@@ -195,7 +195,7 @@ help_string_telegraph = f"""<br>
 """
 
 help = telegraph.create_page(
-    title="Clone-Bot Help",
+    title="Clonex",
     content=help_string_telegraph,
 )["path"]
 
