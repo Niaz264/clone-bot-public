@@ -79,11 +79,11 @@ class TelegraphHelper:
                     content += f'<b> | <a href="https://{self.api_url}/{path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             self.edit_page(
-                path=path[prev_page], title="Clone-Bot  Search", content=content
+                path=path[prev_page], title="Sito-Cloud", content=content
             )
         return
 
 
 telegraph = TelegraphHelper(
-    "Clone-Bot", "https://github.com/yashoswalyo/clone-bot-public"
+    "Sito-Cloud", "https://t.me/sito404"
 )
